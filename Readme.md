@@ -32,9 +32,10 @@ The setup includes a custom Sail theme located in the `sail` directory. This the
 ## Running the Setup
 
 1. Clone this repository
-2. Run the following command: docker-compose up -d
-3. Access Keycloak at: http://localhost:8080
-4. Log in to the admin console and select the Sail theme for your realm
+2. Build docker image locally: docker build -t keycloak-custom .
+3. Run the following command: docker-compose up -d
+4. Access Keycloak at: http://localhost:8080
+5. Log in to the admin console and select the Sail theme for your realm
 
 ## Ports
 
