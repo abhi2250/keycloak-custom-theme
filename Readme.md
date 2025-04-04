@@ -46,3 +46,7 @@ The setup includes a custom Sail theme located in the `sail` directory. This the
 
 - PostgreSQL data is persisted in a Docker volume named `postgres_data`
 - Custom theme is mounted from the local `sail` directory
+
+## Screenshot
+
+![Alt text](/login_screenshot.png?raw=true "Login")
