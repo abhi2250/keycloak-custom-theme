@@ -1,6 +1,6 @@
 # Keycloak Setup
 
-This repository contains a Docker Compose setup for running Keycloak with PostgreSQL.
+This repository contains a Docker Compose setup for running Keycloak with PostgreSQL and a custom Sail theme.
 
 ## Prerequisites
 
@@ -12,6 +12,7 @@ This repository contains a Docker Compose setup for running Keycloak with Postgr
 The setup includes:
 - Keycloak server
 - PostgreSQL database
+- Custom Sail theme
 
 ### Environment Variables
 
@@ -24,11 +25,16 @@ PostgreSQL is configured with:
 - Username: keycloak
 - Password: password
 
+### Custom Theme
+
+The setup includes a custom Sail theme located in the `sail` directory. This theme is automatically mounted to the Keycloak container and can be selected in the Keycloak admin console.
+
 ## Running the Setup
 
 1. Clone this repository
 2. Run the following command: docker-compose up -d
 3. Access Keycloak at: http://localhost:8080
+4. Log in to the admin console and select the Sail theme for your realm
 
 ## Ports
 
@@ -37,4 +43,5 @@ PostgreSQL is configured with:
 
 ## Volumes
 
-PostgreSQL data is persisted in a Docker volume named `postgres_data`.
+- PostgreSQL data is persisted in a Docker volume named `postgres_data`
+- Custom theme is mounted from the local `sail` directory
